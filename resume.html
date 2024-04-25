@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Resume</title>
+</head>
+<body>
+
+    <nav >
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Portfolio" width="210px" height="75px"></a>
+        </div>
+        <ul >
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="">About Me</a>
+                <!-- Add the dropdown content -->
+                <ul class="dropdown-content">
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </li>
+            <li><a href="achievements.html
+                ">Achivements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+        <li class="menu">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            <!-- Add the dropdown content -->
+            <ul class="menu-content">
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </li>
+    </nav>
+
+    
+
+    <div class="wrapper_clearfix">
+        <div class="left">
+            
+      
+          <div class="name-hero" style="font-size: 26px;">
+      
+            <h1>Sriram <em>S</em></h1>
+              <p>10 Iroquois St Boston, MA 02120</p>
+              <p>adamskianthony@gmail.com</p>
+              <p>(956) 500-5558</p>
+              <img src="profile_img.jpg" alt="" height="300px" width="240px" style="margin-left: 120px; margin-bottom: 40px;">
+      
+          </div>
+      
+        </div>
+        <div class="right">
+      
+          <div class="inner">
+            <section>
+              <h1>Employment</h1>
+              <p><span>Winter 2015 - Present<span></span> <em>Grand Interactive, llc. | Mobile App Developer</em></p>
+              <p>Raised $78,000 in early stage funding, created initial design
+                concepts, and oversaw initial development. Currently oversee and maintain all front end code and server functionality.</p>
+              <p><span>Spring 2012 - Winter 2015 |<span></span> <em>PadMatcher Inc. | CTO, Co-Founder</em></p>
+              <p>Raised $78,000 in early stage funding, created initial design
+                concepts, and oversaw initial development. Oversaw and maintained all front end code and server functionality.</p>
+              <p><span>Fall 2011 - Fall 2013 |</span> <em>Penrose Realty llc. | Desinger & Assistant</em></p>
+              <p>Responsible for all technical areas. Maintain servers, computers, and provide in office technical support. Rebranded company from ground up including a fully responsive website. </p>
+            </section>
+            <section>
+              <h1>Technical Skills</h1>
+              <ul class="skill-set">
+                <li>Mobile Development</li>
+                <li>Xamarin</li>
+                <li>CSS3</li>
+                <li>Adobe Photoshop</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JQUERY</li>
+                <li>UI Design</li>
+                <li>Company Branding</li>
+                <li>Responsive Web Design</li>
+              </ul>
+            </section>
+            <section>
+              <h1>References</h1>
+              <p><span>William Grand</span> | <em>Grand Interactive, llc. | CEO</em></p>
+              <p><span>(617) 448-0910</span> | wgrand@grandinteractive.com</p>
+              <p><span>Eric Chauvin</span> | <em>PadMatcher Inc. | CEO</em></p>
+              <p><span>(617) 448-0910</span> | eric@padmatcher.com</p>
+              <p><span> Heller</span> <em>Penrose Realty LLC. | Broker</em></p>
+              <p><span>(617) 794-4554</span> | chris@penroserealty.com</p>
+            </section>
+            <section>
+              <h1>Personal Interests</h1>
+              <ul class="skill-set">
+                <li>Faith</li>
+                <li>Biblical Studies</li>
+                <li>Playing Guitar</li>
+                <li>Song Writing</li>
+                <li>Health & Nutrition</li>
+                <li>Reading</li>
+              </ul>
+            </section>
+            <section>
+              <div class="handmade">
+                <p><span>handmade by</span> <em> Anthony Adamski</em></p>
+              </div>
+            </section>
+          </div>
+      
+        </div>
+      
+      </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const menu = document.querySelector('.menu');
+    const menuContent = document.querySelector('.menu-content');
+
+    menu.addEventListener('click', function() {
+        menuContent.classList.toggle('show');
+    });
+
+    const elements = document.querySelectorAll('.inner section');
+
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Function to handle scroll event
+function handleScroll() {
+    elements.forEach(element => {
+        if (isInViewport(element)) {
+            element.classList.add('show');
+        } else {
+            element.classList.remove('show');
+        }
+    });
+}
+
+window.addEventListener('scroll', handleScroll);
+
+handleScroll();
+
+});
+
+    
+
+        
+</script>
+</html>
