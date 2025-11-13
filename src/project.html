@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Projects</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Portfolio" width="210px" height="75px"></a>
+        </div>
+        <ul >
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">About Me</a>
+                <!-- Add the dropdown content -->
+                <ul class="dropdown-content">
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </li>
+            <li><a href="achievements.html">Achivements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <li class="menu">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            <!-- Add the dropdown content -->
+            <ul class="menu-content">
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </li>
+    </nav>
+
+
+    <section class="portfolio" id="portfolio">
+        
+		<div class="main-text">
+            <h1>..................................</h1>
+			<h2>My Projects</h2>
+			<h5>Some Of My Distinguished Works</h4>
+		</div>
+
+		<div class="portfolio-content">
+			<div class="row">
+				<a href="https://www.geeksforgeeks.org/library-management-system/" target="_blank">
+					<img src="lib.jpeg" height="40px" width="50px">
+				</a>
+					<div class="main-row">
+					<div class="row-text">
+						<h6>Web App development</h6>
+					</div>
+				</div>
+				<h3>Library Management System</h3>
+			</div>
+
+			<div class="row">
+				<a href="https://www.geeksforgeeks.org/forecast-weather-project-check-today-weather-for-any-location/" target="_blank">
+					<img src="weather.jpg">
+				</a>
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Web App Development</h6>
+					</div>
+				</div>
+				<h3>Weather Forecasting App</h3>
+			</div>
+			
+			<div class="row">
+				<a href="https://www.geeksforgeeks.org/dog-breed-classification-using-transfer-learning/" target="_blank">
+					<img src="dog.jpeg">
+				</a>
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Machine Learning</h6>
+					</div>
+				</div>
+				<h3>Dog's Breed Classification</h3>
+			</div>
+
+			<div class="row">
+				<a href="https://www.geeksforgeeks.org/ml-boston-housing-kaggle-challenge-with-linear-regression/" target="_blank">
+					<img src="house.jpeg">
+				</a>
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Machine Learning</h6>
+					</div>
+				</div>
+				<h3>Boston House Price Prediction</h3>
+			</div>
+
+            <div class="row">
+				<a href="https://www.geeksforgeeks.org/dog-breed-classification-using-transfer-learning/" target="_blank">
+					<img src="dog_2.jpeg">
+				</a>
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Machine Learning</h6>
+					</div>
+				</div>
+				<h3>Dog's Breed Classification</h3>
+			</div>
+
+		</div>
+	</section>
+    <footer>
+
+    </footer>
+	
+</body>
+<script>
+    const menu = document.querySelector('.menu')
+    const menuList = document.querySelector('nav ul')
+    menu.addEventListener('click',()=>{
+        menuList.classList.toggle('.showmenu')
+    })
+</script>
+</html>
